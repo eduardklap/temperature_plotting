@@ -24,9 +24,6 @@ def test_compute_mean():
     calc = tpl.compute_mean([])
     assert calc == None
     
-test_compute_mean()
-
-
 @pytest.mark.skip(reason="test is made to fail")
 def test_create_name():
     assert tpl.create_name(77) == "plot_7778.png"
@@ -36,13 +33,8 @@ def test_create_name():
     with pytest.raises(TypeError):
         tpl.create_name()
         
-test_create_name()
-
-
 # integration test
 def test_main():
     tpl.main()
     assert os.path.exists("plot_25.png")
     
-test_main()
-
