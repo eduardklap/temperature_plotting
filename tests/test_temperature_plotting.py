@@ -37,7 +37,7 @@ test_compute_mean()
 
 
 def test_create_name():
-    assert tpl.create_name(77) == "plot_77.png"
+    assert tpl.create_name(77) == "plot_7778.png"
     assert tpl.create_name("") == "plot_.png"
     assert tpl.create_name("fifteen") == "plot_fifteen.png"
 
